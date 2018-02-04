@@ -13,7 +13,7 @@ export default function(state = initialState, action) {
       };
     case REMOVE_FROM_WISHLIST:
       state.wishlist = state.wishlist.filter(
-        pr => pr.suggestion !== action.payload.suggestion
+        pr => pr.url !== action.payload.url
       );
       return {
         ...state

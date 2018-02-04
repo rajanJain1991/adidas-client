@@ -4,7 +4,7 @@ import SearchBar from './SearchBar';
 import {
   fetchProducts,
   addToWishlist,
-  removeFromeWishlist
+  removeFromWishlist
 } from '../actions/index';
 import { bindActionCreators } from 'redux';
 import Product from './Product';
@@ -26,7 +26,7 @@ class ProductList extends Component {
             wishlist={this.props.wishlist}
             index={index}
             addToWishlist={this.props.addToWishlist}
-            removeFromeWishlist={this.props.removeFromeWishlist}
+            removeFromWishlist={this.props.removeFromWishlist}
             key={index}
           />
         );
@@ -75,7 +75,7 @@ const mapDispatchToProps = dispatch => {
     {
       fetchProducts,
       addToWishlist,
-      removeFromeWishlist
+      removeFromWishlist
     },
     dispatch
   );

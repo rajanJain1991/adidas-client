@@ -13,8 +13,7 @@ class Product extends Component {
   render() {
     let product = this.props.product;
     let inWishlist =
-      this.props.wishlist.filter(wp => wp.suggestion === product.suggestion)
-        .length > 0;
+      this.props.wishlist.filter(wp => wp.url === product.url).length > 0;
     return (
       <div
         className="product"
@@ -28,7 +27,18 @@ class Product extends Component {
           </div>
           <div style={{ float: 'right', margin: '10px' }}>
             {inWishlist ? (
-              <a>In wishlist</a>
+              <a
+                className="wishlist tooltip"
+                onClick={() => {
+                  this.props.removeFromWishlist(product);
+                  this.setState({ key: Math.random() });
+                }}
+              >
+                In wishlist
+                <span className="tooltiptext">
+                  Click to remove from wishlist
+                </span>
+              </a>
             ) : (
               <a
                 className="wishlist tooltip"

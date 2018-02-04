@@ -14,6 +14,6 @@ export const addToWishlist = product => dispatch => {
   dispatch({ type: ADD_TO_WISHLIST, payload: product });
 };
 
-export const removeFromeWishlist = product => dispatch => {
+export const removeFromWishlist = product => dispatch => {
   dispatch({ type: REMOVE_FROM_WISHLIST, payload: product });
 };

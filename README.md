@@ -30,6 +30,18 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
+## Instruction to access all the functionality on web application
+
+--Search the product through a search bar and either enter or click on search icon.
+
+--To Add product to the wishlist click on the icon in the right corner of the product tile.
+
+--To see all the product in wishlist click on the menu on the header.
+
+--To remove items in wishlist click on close icon in right top corner.
+
+--To go back to the search page click on the adidas logo.
+
 ## License & copyright
 
 MIT License

@@ -26,7 +26,7 @@ class WishListElement extends Component {
             <a
               className="wishlist tooltip"
               onClick={() => {
-                this.props.removeFromeWishlist(product);
+                this.props.removeFromWishlist(product);
                 this.setState({ key: Math.random() });
               }}
             >

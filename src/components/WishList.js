@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { removeFromeWishlist } from '../actions/index';
+import { removeFromWishlist } from '../actions/index';
 import { bindActionCreators } from 'redux';
 import WishListElement from './WishListElement';
 
@@ -18,7 +18,7 @@ class WishList extends Component {
         list.push(
           <WishListElement
             product={product}
-            removeFromeWishlist={this.props.removeFromeWishlist}
+            removeFromWishlist={this.props.removeFromWishlist}
             key={index}
           />
         );
@@ -47,7 +47,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return bindActionCreators(
     {
-      removeFromeWishlist
+      removeFromWishlist
     },
     dispatch
   );
