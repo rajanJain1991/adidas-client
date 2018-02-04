@@ -10,6 +10,10 @@ A sample readme for the Adidas recruitment programming challenge
 
 In the project directory, you can run:
 
+### `npm install`
+
+Will install all the dependencies needed to run the project on your local machine.
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
